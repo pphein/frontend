@@ -1,0 +1,58 @@
+{
+    "name": "PHP",
+    "image": "ngwehtun/devcon-phplaravel:8.2",
+    "customizations": {
+        "vscode": {
+            "extensions": [
+                "bmewburn.vscode-intelephense-client",
+                "MehediDracula.php-namespace-resolver",
+                "rifi2k.format-html-in-php",
+                "mohd-akram.vscode-html-format",
+                "ecmel.vscode-html-css",
+                "AnbuselvanRocky.bootstrap5-vscode",
+                "ritwickdey.LiveServer",
+                "sidthesloth.html5-boilerplate"
+            ],
+            "settings": {
+                "php.executablePath": "/usr/local/bin/php",
+                "editor.formatOnSave": true,
+                "terminal.integrated.defaultProfile.linux": "zsh",
+                "terminal.integrated.profiles.linux": {
+                    "zsh": {
+                        "path": "zsh"
+                    }
+                },
+                "php.suggest.basic": true,
+                "intelephense.files.exclude": [
+                    "**/.git/**",
+                    "**/.svn/**",
+                    "**/.hg/**",
+                    "**/CVS/**",
+                    "**/.DS_Store/**",
+                    "**/node_modules/**",
+                    "**/bower_components/**",
+                    "**/vendor/**/{Tests,tests}/**",
+                    "**/.history/**",
+                    "**/vendor/**/vendor/**"
+                ],
+                "intelephense.diagnostics.enable": true,
+                "intelephense.diagnostics.deprecated": true,
+                "intelephense.diagnostics.typeErrors": true,
+                "intelephense.diagnostics.undefinedVariables": true,
+                "namespaceResolver.autoSort": true,
+                "namespaceResolver.sortOnSave": true,
+                "intelephense.format.enable": true,
+                "phpcs.autoConfigSearch": true,
+                "phpcs.enable": true,
+                "phpcs.executablePath": "/home/dev/.composer/vendor/bin/phpcs",
+                "phpcs.ignorePatterns": [
+                    "*/vendor/*"
+                ],
+                "files.watcherExclude": {
+                    "**/vendor/**": true
+                }
+            }
+        }
+    },
+    "remoteUser": "dev"
+}
