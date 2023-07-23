@@ -15,6 +15,13 @@
     <script src="js/pooper-2.11.6.min.js"></script>
     <script src="js/bootstrap-5.2.1.min.js"></script>
     <script src="js/bootstarp-3.3.5.js"></script>
+
+    <!-- <link rel="stylesheet" href="https://cdn.datatables.net/1.13.5/css/jquery.dataTables.min.css"> -->
+    <!-- <script src="https://cdn.datatables.net/1.13.5/js/jquery.dataTables.min.js"></script> -->
+    <link rel="stylesheet" href="css/datatables-1.13.5.min.css">
+    <script src="js/datatables-1.13.5.min.js"></script>
+
+    <link rel="stylesheet" href="css/login-modal.css">
 </head>
 
 <body>
@@ -39,13 +46,13 @@
                                     <a class="nav-link" href="">Home</a>
                                 </li>
                                 <li class="nav-item menu-list">
-                                    <a class="nav-item nav-link" href="">List</a>
+                                    <a class="nav-item nav-link" href="#books">Books</a>
                                 </li>
                                 <li class="nav-item menu-list">
-                                    <a class="nav-item nav-link" href="">Photo</a>
+                                    <a class="nav-item nav-link" href="">Blogs</a>
                                 </li>
                                 <li class="nav-item menu-list">
-                                    <a class="nav-link" href="">Contact</a>
+                                    <a class="nav-link" href="#contact">Contact</a>
                                 </li>
                             </ul>
                         </div>
@@ -61,6 +68,44 @@
                     <div class="content fix">
                         <h1>Online Library</h1>
                         <h3>Nothing is pleasanter than exploring a library</h3>
+                    </div>
+                </div>
+                <div class="col-12">
+                    <!-- <a href="" class="btn btn-success ml-2">Get Started<span class="ml-2 right-icon"><i class="fas fa-arrow-right"></i></span></a> -->
+                    <button type="button" class="btn btn-lg btn-primary" data-bs-toggle="modal" data-bs-target="#loginModal">
+                        Get Started
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row text-center text-white counter-list">
+                <div class="col mt-1">
+                    <div class="counter">
+                        <i class="fa fa-users fa-2x"></i>
+                        <h3 class="timer count-title count-number" data-to="100" data-speed="1500"></h3>
+                        <p class="count-text ">Members</p>
+                    </div>
+                </div>
+                <div class="col mt-1">
+                   <div class="counter">
+                        <i class="fa fa-book fa-2x"></i>
+                        <h3 class="timer count-title count-number" data-to="1700" data-speed="1500"></h3>
+                        <p class="count-text ">Books</p>
+                    </div>
+                </div>
+                <div class="col mt-1">
+                    <div class="counter">
+                        <i class="fa fa-comments fa-2x"></i>
+                        <h3 class="timer count-title count-number" data-to="11900" data-speed="1500"></h3>
+                        <p class="count-text ">Reviews</p>
+                    </div>
+                </div>
+                <div class="col mt-1">
+                    <div class="counter">
+                        <i class="fa fa-handshake fa-2x"></i>
+                        <h3 class="timer count-title count-number" data-to="157" data-speed="1500"></h3>
+                        <p class="count-text ">Partners</p>
                     </div>
                 </div>
             </div>
@@ -83,7 +128,7 @@
                             </div>
                         </div>
                     </form> -->
-                    <div class="input-group search">
+                    <!-- <div class="input-group search">
                         <div class="input-group-btn search-panel type">
                             <select class="form-select" aria-label="Default select example">
                                 <option selected>Filters</option>
@@ -97,13 +142,13 @@
                         <span class="input-group-btn">
                             <button class="btn btn-success btn-search-btn" type="button">search</button>
                         </span>
-                    </div>
+                    </div> -->
                 </div>
             </div>
         </div>
     </div>
 
-    <div class="container-xl">
+    <div class="container mt-5 mb-5">
         <div class="row">
             <div class="col-md-12">
                 <h2>TOP 10 <b>BestSellers</b></h2>
@@ -118,7 +163,7 @@
                     <div class="carousel-inner">
                         <div class="item carousel-item active">
                             <div class="row">
-                                <div class="col-sm-3">
+                                <div class="col-sm-6 col-md-3 mt-1">
                                     <div class="thumb-wrapper">
                                         <span class="wish-icon"><i class="fa fa-heart-o"></i></span>
                                         <div class="img-box">
@@ -140,7 +185,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col-sm-3">
+                                <div class="col-sm-6 col-md-3 mt-1">
                                     <div class="thumb-wrapper">
                                         <span class="wish-icon"><i class="fa fa-heart-o"></i></span>
                                         <div class="img-box">
@@ -163,7 +208,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col-sm-3">
+                                <div class="col-sm-6 col-md-3 mt-1">
                                     <div class="thumb-wrapper">
                                         <span class="wish-icon"><i class="fa fa-heart-o"></i></span>
                                         <div class="img-box">
@@ -186,7 +231,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col-sm-3">
+                                <div class="col-sm-6 col-md-3 mt-1">
                                     <div class="thumb-wrapper">
                                         <span class="wish-icon"><i class="fa fa-heart-o"></i></span>
                                         <div class="img-box">
@@ -213,7 +258,7 @@
                         </div>
                         <div class="item carousel-item">
                             <div class="row">
-                                <div class="col-sm-3">
+                                <div class="col-sm-6 col-md-3 mt-1">
                                     <div class="thumb-wrapper">
                                         <span class="wish-icon"><i class="fa fa-heart-o"></i></span>
                                         <div class="img-box">
@@ -236,7 +281,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col-sm-3">
+                                <div class="col-sm-6 col-md-3 mt-1">
                                     <div class="thumb-wrapper">
                                         <span class="wish-icon"><i class="fa fa-heart-o"></i></span>
                                         <div class="img-box">
@@ -259,7 +304,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col-sm-3">
+                                <div class="col-sm-6 col-md-3 mt-1">
                                     <div class="thumb-wrapper">
                                         <span class="wish-icon"><i class="fa fa-heart-o"></i></span>
                                         <div class="img-box">
@@ -282,7 +327,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col-sm-3">
+                                <div class="col-sm-6 col-md-3 mt-1">
                                     <div class="thumb-wrapper">
                                         <span class="wish-icon"><i class="fa fa-heart-o"></i></span>
                                         <div class="img-box">
@@ -309,7 +354,7 @@
                         </div>
                         <div class="item carousel-item">
                             <div class="row">
-                                <div class="col-sm-3">
+                                <div class="col-sm-6 col-md-3 mt-1">
                                     <div class="thumb-wrapper">
                                         <span class="wish-icon"><i class="fa fa-heart-o"></i></span>
                                         <div class="img-box">
@@ -332,7 +377,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col-sm-3">
+                                <div class="col-sm-6 col-md-3 mt-1">
                                     <div class="thumb-wrapper">
                                         <span class="wish-icon"><i class="fa fa-heart-o"></i></span>
                                         <div class="img-box">
@@ -355,7 +400,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col-sm-3">
+                                <div class="col-sm-6 col-md-3 mt-1">
                                     <div class="thumb-wrapper">
                                         <span class="wish-icon"><i class="fa fa-heart-o"></i></span>
                                         <div class="img-box">
@@ -378,7 +423,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col-sm-3">
+                                <div class="col-sm-6 col-md-3 mt-1">
                                     <div class="thumb-wrapper">
                                         <span class="wish-icon"><i class="fa fa-heart-o"></i></span>
                                         <div class="img-box">
@@ -412,6 +457,116 @@
                         <i class="fa fa-angle-right"></i>
                     </a>
                 </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="books" class="container mt-5 mb-5">
+        <h2 class="pt-5">Book Lists</h2>
+        <div class="row mt-5">
+            <div class="col-md-12">
+                <table id="bookList" class="table table-responsive table-sm table-striped table-hover " style="max-width:100%">
+                    <thead>
+                        <tr>
+                        <th>Name</th>
+                        <th>Position</th>
+                        <th>Office</th>
+                        <th>Age</th>
+                        <th>Start date</th>
+                        <th>Salary</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                        <td>Tiger Nixon</td>
+                        <td>System Architect</td>
+                        <td>Edinburgh</td>
+                        <td>61</td>
+                        <td>2011/04/25</td>
+                        <td>$320,800</td>
+                        </tr>
+                        <tr>
+                        <td>Garrett Winters</td>
+                        <td>Accountant</td>
+                        <td>Tokyo</td>
+                        <td>63</td>
+                        <td>2011/07/25</td>
+                        <td>$170,750</td>
+                        </tr>
+                        <tr>
+                        <td>Ashton Cox</td>
+                        <td>Junior Technical Author</td>
+                        <td>San Francisco</td>
+                        <td>66</td>
+                        <td>2009/01/12</td>
+                        <td>$86,000</td>
+                        </tr>
+                        <tr>
+                        <td>Cedric Kelly</td>
+                        <td>Senior Javascript Developer</td>
+                        <td>Edinburgh</td>
+                        <td>22</td>
+                        <td>2012/03/29</td>
+                        <td>$433,060</td>
+                        </tr>
+                        <tr>
+                        <td>Airi Satou</td>
+                        <td>Accountant</td>
+                        <td>Tokyo</td>
+                        <td>33</td>
+                        <td>2008/11/28</td>
+                        <td>$162,700</td>
+                        </tr>
+                        <tr>
+                        <td>Brielle Williamson</td>
+                        <td>Integration Specialist</td>
+                        <td>New York</td>
+                        <td>61</td>
+                        <td>2012/12/02</td>
+                        <td>$372,000</td>
+                        </tr>
+                        <tr>
+                        <td>Herrod Chandler</td>
+                        <td>Sales Assistant</td>
+                        <td>San Francisco</td>
+                        <td>59</td>
+                        <td>2012/08/06</td>
+                        <td>$137,500</td>
+                        </tr>
+                        <tr>
+                        <td>Rhona Davidson</td>
+                        <td>Integration Specialist</td>
+                        <td>Tokyo</td>
+                        <td>55</td>
+                        <td>2010/10/14</td>
+                        <td>$327,900</td>
+                        </tr>
+                        <tr>
+                        <td>Colleen Hurst</td>
+                        <td>Javascript Developer</td>
+                        <td>San Francisco</td>
+                        <td>39</td>
+                        <td>2009/09/15</td>
+                        <td>$205,500</td>
+                        </tr>
+                        <tr>
+                        <td>Sonya Frost</td>
+                        <td>Software Engineer</td>
+                        <td>Edinburgh</td>
+                        <td>23</td>
+                        <td>2008/12/13</td>
+                        <td>$103,600</td>
+                        </tr>
+                        <tr>
+                        <td>Donna Snider</td>
+                        <td>Customer Support</td>
+                        <td>New York</td>
+                        <td>27</td>
+                        <td>2011/01/25</td>
+                        <td>$112,000</td>
+                        </tr>
+                    </tbody>                
+                </table>
             </div>
         </div>
     </div>
@@ -534,8 +689,9 @@
             </div>
         </div>
     </div>
-    <div class="container">
-        <h2>My Customers</h2>
+
+    <div class="container mt-5 mb-5">
+        <h2 class="pt-5">Our Partners</h2>
 
         <input type="text" id="search" placeholder="Search for names.." title="Type in a name">
         <select name="filters" id="filters">
@@ -581,12 +737,278 @@
                 <td>France</td>
             </tr>
         </table>
+    </div>   
+
+    <div class="container mt-5 mb-5 rounded bg-white">
+        <div class="h3">Registration Form</div>
+        <div class="form">
+            <div class="row">
+                <div class="col-md-6 mt-md-0 mt-3">
+                    <label>First Name</label>
+                    <input type="text" class="form-control" required>
+                </div>
+                <div class="col-md-6 mt-md-0 mt-3">
+                    <label>Last Name</label>
+                    <input type="text" class="form-control" required>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6 mt-md-0 mt-3">
+                    <label>Birthday</label>
+                    <input type="date" class="form-control" required>
+                </div>
+                <div class="col-md-6 mt-md-0 mt-3">
+                    <label>Gender</label>
+                    <div class="d-flex align-items-center mt-2">
+                        <label class="option">
+                            <input type="radio" name="radio">Male
+                            <span class="checkmark"></span>
+                        </label>
+                        <label class="option ms-4">
+                            <input type="radio" name="radio">Female
+                            <span class="checkmark"></span>
+                        </label>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6 mt-md-0 mt-3">
+                    <label>Email</label>
+                    <input type="email" class="form-control" required>
+                </div>
+                <div class="col-md-6 mt-md-0 mt-3">
+                    <label>Phone Number</label>
+                    <input type="tel" class="form-control" required>
+                </div>
+            </div>
+            <div class=" my-md-2 my-3">
+                <label>Subject</label>
+                <select id="sub" required>
+                    <option value="" selected hidden>Choose Option</option>
+                    <option value="Maths">Maths</option>
+                    <option value="Science">Science</option>
+                    <option value="Social">Social</option>
+                    <option value="Hindi">Hindi</option>
+                </select>
+            </div>
+            <div class="btn btn-primary mt-3">Submit</div>
+        </div>
+
     </div>
 
-    <!-- 
-    <script src="js/pooper-2.11.6.min.js"></script>
-    <script src="js/bootstrap-5.2.1.min.js"></script>
-    <script src="js/bootstarp-3.3.5.js"></script> -->
+    <div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="loginModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered login-modal-div" role="document">
+            <div class="modal-content vw-100">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLongTitle">Welcome!</h5>
+                    <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="white-bg center modal-header">
+                    <div class="col">
+                        <input id="tab1" type="radio" name="tabs" checked="">
+                        <label class="tab-label" for="tab1">Sign In</label>
+                
+                        <input id="tab2" type="radio" name="tabs">
+                        <label class="tab-label" for="tab2">Sign Up</label>
+            
+                        <section id="content1">
+                            <form method="POST" class="login-form" id="Login">
+                                <input type="hidden" name="reqType" value="Login">
+                                <div class="modal-form-group">
+                                    <div class="extra"></div>
+                                </div>
+                                <div class="modal-form-group">
+                                    <i class="input-icon fa-solid fa-user"></i>
+                                    <input name="user" id="luser" required="required" type="text" class="modal-form-input" placeholder="Username or email">
+                                </div>
+                                <div class="modal-form-group">
+                                    <i class="input-icon fa-solid fa-lock"></i>
+                                    <input name="pass" id="password" type="password" required="required" class="modal-form-input" placeholder="Password">
+                                </div>
+                                <div class="modal-form-group left">
+                                    <input name="rem" type="checkbox" checked="">
+                                    <label class="modal-form-label" for="remember">Remember me</label>
+                                    <a class="pull-right forgot-link">Forgot Password</a>
+                                </div>
+                                <div class="modal-form-group left" style="display:none;">
+                                    <center><div id="loginCaptcha"><div style="width: 304px; height: 78px;"><div><iframe title="reCAPTCHA" src="https://www.google.com/recaptcha/api2/anchor?ar=1&amp;k=6LexF0sUAAAAADiQjz9BMiSrqplrItl-tWYDSfWa&amp;co=aHR0cHM6Ly93d3cuZ2Vla3Nmb3JnZWVrcy5vcmc6NDQz&amp;hl=en&amp;v=iRvKkcsnpNcOYYwhqaQxPITz&amp;size=normal&amp;cb=e2zp9uhxxlro" role="presentation" name="a-mxj21s37y1x1" scrolling="no" sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-top-navigation allow-modals allow-popups-to-escape-sandbox allow-storage-access-by-user-activation" width="304" height="78" frameborder="0"></iframe></div><textarea id="g-recaptcha-response-1" name="g-recaptcha-response" class="g-recaptcha-response" style="width: 250px; height: 40px; border: 1px solid rgb(193, 193, 193); margin: 10px 25px; padding: 0px; resize: none; display: none;"></textarea></div></div></center>
+                                </div>
+                                <button class="btn btn-green signin-button" type="submit">Sign In</button>
+                            </form>
+                        </section>
+                        <section id="content2">
+                            <form method="POST" class="login-form" id="Register">
+                                <input type="hidden" name="reqType" value="Register">
+                                <div class="modal-form-group">
+                                    <div class="extra"></div>
+                                </div>
+                                <div class="modal-form-group">
+                                    <i class="input-icon fa-solid fa-envelope"></i>
+                                    <input name="email" id="email" type="email" required="required" class="modal-form-input" placeholder="E-mail">
+                                </div>
+                                <div class="modal-form-group">
+                                    <i class="input-icon fa-solid fa-lock"></i>
+                                    <input name="pass" id="reg-password" type="password" required="required" class="modal-form-input" placeholder="Password">
+                                </div>
+                                <div class="modal-form-group">
+                                    <i class="input-icon fa-solid fa-building"></i>
+                                    <input autocomplete="off" type="text" class="modal-form-input typeahead tt-hint" style="position: absolute; top: 0px; left: 0px; border-color: transparent; box-shadow: none; opacity: 1; background: rgb(255, 255, 255);" readonly="" spellcheck="false" tabindex="-1" dir="ltr"><input name="institute" id="organization" autocomplete="off" required="required" type="text" class="modal-form-input typeahead tt-input" placeholder="Institution/Organization" spellcheck="false" dir="auto" style="position: relative; vertical-align: top; background-color: transparent;" aria-activedescendant="" aria-owns="organization_listbox" role="combobox" aria-readonly="true" aria-autocomplete="list"><span role="status" aria-live="polite" style="position: absolute; padding: 0px; border: 0px none; height: 1px; width: 1px; margin-bottom: -1px; margin-right: -1px; overflow: hidden; clip: rect(0px, 0px, 0px, 0px); white-space: nowrap;"></span><pre aria-hidden="true" style="position: absolute; visibility: hidden; white-space: pre; font-family: &quot;Roboto&quot;, sans-serif; font-size: 13.3333px; font-style: normal; font-variant: normal; font-weight: 400; word-spacing: 0px; letter-spacing: 0px; text-indent: 0px; text-rendering: optimizelegibility; text-transform: none;"></pre><div role="listbox" class="tt-menu" style="position: absolute; top: 100%; left: 0px; z-index: 100; display: none;"><div role="presentation" class="tt-dataset tt-dataset-0"></div></div></span>
+                                </div>
+                                <div class="modal-form-group">
+                                    <center>
+                                        <div id="registerCaptcha">
+                                            <div style="width: 304px; height: 78px;">
+                                                <div>
+                                                    <iframe title="reCAPTCHA" src="https://www.google.com/recaptcha/api2/anchor?ar=1&amp;k=6LexF0sUAAAAADiQjz9BMiSrqplrItl-tWYDSfWa&amp;co=aHR0cHM6Ly93d3cuZ2Vla3Nmb3JnZWVrcy5vcmc6NDQz&amp;hl=en&amp;v=iRvKkcsnpNcOYYwhqaQxPITz&amp;size=normal&amp;cb=a0w0h1ga2p9q" role="presentation" name="a-u4rqwbxmhjl3" scrolling="no" sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-top-navigation allow-modals allow-popups-to-escape-sandbox allow-storage-access-by-user-activation" width="304" height="78" frameborder="0"></iframe>
+                                                </div>
+                                                <textarea id="g-recaptcha-response" name="g-recaptcha-response" class="g-recaptcha-response" style="width: 250px; height: 40px; border: 1px solid rgb(193, 193, 193); margin: 10px 25px; padding: 0px; resize: none; display: none;"></textarea>
+                                            </div>
+                                        </div>
+                                    </center>
+                                </div>
+                                <input name="to" type="hidden" value="https://auth.geeksforgeeks.org/?to=https://www.geeksforgeeks.org/how-to-set-input-type-date-in-dd-mm-yyyy-format-using-html/">
+                                <button class="btn btn-green signup-button" type="submit">Sign Up</button>
+                            </form>
+                        </section>
+                        <div class="social-signin-div">
+                            <div class="social-divider">
+                                <span>or</span>
+                            </div>
+                            <div class="google-div social-div pull-left">
+                                <a id="glogin" href="javascript:void(0)" class="btn btn-social btn-google">
+                                    <span class="fa fa-google"></span>Google
+                                </a>
+                            </div>
+                            <div class="facebook-div social-div">
+                                <a id="fblogin" class="btn btn-social btn-facebook">
+                                    <span class="fa fa-facebook"></span>Facebook
+                                </a>  
+                            </div>
+                            <p style="display:block;margin:10px 0px;"></p>
+                            <div class="linkedin-div social-div pull-left">
+                                <a id="inlogin" class="btn btn-social btn-linkedin">
+                                    <span class="fa fa-linkedin"></span>LinkedIn
+                                </a>
+                            </div>
+                            <div class="github-div social-div pull-left">
+                                <a id="gitlogin" class="btn btn-social btn-github">
+                                    <span class="fa fa-github"></span>GitHub
+                                </a>
+                            </div>
+                            <div style="padding: 10px 0px;font-size: 14px;font-weight: 500;padding-top: 50px;"></div>
+                                <div class="tnc-div">
+                                    By creating this account, you agree to our <a href="" target="_blank">Privacy Policy</a> &amp; <a href="" target="_blank">Cookie Policy</a>.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="forgot-div">
+                            <form class="login-form" id="Forgot">
+                                <input type="hidden" name="reqType" value="Forgot">
+                                <div class="modal-form-group">
+                                    <div class="extra"></div>
+                                </div>
+                                <div class="modal-form-group">
+                                <p class="left">Please enter your email address or userHandle.</p>
+                            </div>
+                            <div class="modal-form-group">
+                                <i class="input-icon material-icons">account_circle</i>
+                                <input name="user" id="fuser" type="text" class="modal-form-input" placeholder="Username/Email">
+                            </div>
+                            <div class="modal-form-group">
+                                <center>
+                                    <div id="forgotCaptcha">
+                                        <div style="width: 304px; height: 78px;">
+                                            <div>
+                                                <iframe title="reCAPTCHA" src="https://www.google.com/recaptcha/api2/anchor?ar=1&amp;k=6LexF0sUAAAAADiQjz9BMiSrqplrItl-tWYDSfWa&amp;co=aHR0cHM6Ly93d3cuZ2Vla3Nmb3JnZWVrcy5vcmc6NDQz&amp;hl=en&amp;v=iRvKkcsnpNcOYYwhqaQxPITz&amp;size=normal&amp;cb=b9h2uc1bpf3k" role="presentation" name="a-5iu51tgbn21n" scrolling="no" sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-top-navigation allow-modals allow-popups-to-escape-sandbox allow-storage-access-by-user-activation" width="304" height="78" frameborder="0"></iframe>
+                                            </div>
+                                            <textarea id="g-recaptcha-response-2" name="g-recaptcha-response" class="g-recaptcha-response" style="width: 250px; height: 40px; border: 1px solid rgb(193, 193, 193); margin: 10px 25px; padding: 0px; resize: none; display: none;"></textarea>
+                                        </div>
+                                        <iframe style="display: block;"></iframe>
+                                    </div>
+                                </center>
+                            </div>
+                            <div class="modal-form-group left">
+                                <a class="login-link">Back to Login</a>
+                            </div>
+                            <button class="btn btn-green center reset-button" type="submit">Reset Password</button>
+                        </form> 
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="contact" class="container contact mt-5 mb-5">  
+        <h2 class="pt-5">Contact Us</h2>  
+        <div class="row">  
+            <div class="col-lg-5 d-flex align-items-stretch">
+              <div class="info">
+                <div class="address">
+                  <i class="fas fa-location-dot"></i>
+                  <h4>Location:</h4>
+                  <p>A108 Adam Street, New York, NY 535022</p>
+                </div>
+  
+                <div class="email">
+                  <i class="fas fa-envelope"></i>
+                  <h4>Email:</h4>
+                  <p>info@example.com</p>
+                </div>
+  
+                <div class="phone">
+                  <i class="fas fa-mobile-screen-button"></i>
+                  <h4>Call:</h4>
+                  <p>+1 5589 55488 55s</p>
+                </div>  
+                <iframe src="https://maps.google.com/maps?width=600&amp;height=400&amp;hl=en&amp;q=Code Cofe&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed" style="border:0; width: 100%; height: 290px;" allowfullscreen="" frameborder="0"></iframe>
+              </div>  
+            </div>
+  
+            <div class="col-lg-7 mt-5 mt-lg-0 d-flex align-items-stretch">
+              <form action="forms/contact.php" method="post" role="form" class="col">
+                <div class="row">
+                  <div class="form-group col-md-6">
+                    <label for="name">Your Name</label>
+                    <input type="text" name="name" class="form-control" id="name" required="">
+                  </div>
+                  <div class="form-group col-md-6 mt-3 mt-md-0">
+                    <label for="name">Your Email</label>
+                    <input type="email" class="form-control" name="email" id="email" required="">
+                  </div>
+                </div>
+                <div class="form-group mt-3">
+                  <label for="name">Subject</label>
+                  <input type="text" class="form-control" name="subject" id="subject" required="">
+                </div>
+                <div class="form-group mt-3">
+                  <label for="name">Message</label>
+                  <textarea class="form-control" name="message" rows="10" required=""></textarea>
+                </div>
+                <div class="my-3">
+                  <div class="loading">Loading</div>
+                  <div class="error-message">Sorry, your message was not sent. Please tyr again.</div>
+                  <div class="sent-message">Your message has been sent. Thank you!</div>
+                </div>
+                <div class="text-center"><button type="submit">Send Message</button></div>
+              </form>
+            </div>  
+          </div> 
+        </div>
+
+    <div class="bottom section-padding">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 text-center">
+                    <div class="copyright">
+                        <p>© <span>2018</span> <a href="#" class="transition">Made with Love</a> All rights reserved.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <script>
         $(document).ready(function (e) {
             $('.search-panel .dropdown-menu').find('a').click(function (e) {
@@ -620,6 +1042,111 @@
                     }
                 }
             });
+        });
+    </script>
+    <script>
+        $(document).ready(function() {
+            $('#bookList').DataTable();
+        } );
+    </script>
+    <script>
+        (function ($) {
+            $.fn.countTo = function (options) {
+                options = options || {};
+                
+                return $(this).each(function () {
+                    // set options for current element
+                    var settings = $.extend({}, $.fn.countTo.defaults, {
+                        from:            $(this).data('from'),
+                        to:              $(this).data('to'),
+                        speed:           $(this).data('speed'),
+                        refreshInterval: $(this).data('refresh-interval'),
+                        decimals:        $(this).data('decimals')
+                    }, options);
+                    
+                    // how many times to update the value, and how much to increment the value on each update
+                    var loops = Math.ceil(settings.speed / settings.refreshInterval),
+                        increment = (settings.to - settings.from) / loops;
+                    
+                    // references & variables that will change with each update
+                    var self = this,
+                        $self = $(this),
+                        loopCount = 0,
+                        value = settings.from,
+                        data = $self.data('countTo') || {};
+                    
+                    $self.data('countTo', data);
+                    
+                    // if an existing interval can be found, clear it first
+                    if (data.interval) {
+                        clearInterval(data.interval);
+                    }
+                    data.interval = setInterval(updateTimer, settings.refreshInterval);
+                    
+                    // initialize the element with the starting value
+                    render(value);
+                    
+                    function updateTimer() {
+                        value += increment;
+                        loopCount++;
+                        
+                        render(value);
+                        
+                        if (typeof(settings.onUpdate) == 'function') {
+                            settings.onUpdate.call(self, value);
+                        }
+                        
+                        if (loopCount >= loops) {
+                            // remove the interval
+                            $self.removeData('countTo');
+                            clearInterval(data.interval);
+                            value = settings.to;
+                            
+                            if (typeof(settings.onComplete) == 'function') {
+                                settings.onComplete.call(self, value);
+                            }
+                        }
+                    }
+                    
+                    function render(value) {
+                        var formattedValue = settings.formatter.call(self, value, settings);
+                        $self.html(formattedValue);
+                    }
+                });
+            };
+            
+            $.fn.countTo.defaults = {
+                from: 0,               // the number the element should start at
+                to: 0,                 // the number the element should end at
+                speed: 1000,           // how long it should take to count between the target numbers
+                refreshInterval: 100,  // how often the element should be updated
+                decimals: 0,           // the number of decimal places to show
+                formatter: formatter,  // handler for formatting the value before rendering
+                onUpdate: null,        // callback method for every time the element is updated
+                onComplete: null       // callback method for when the element finishes updating
+            };
+            
+            function formatter(value, settings) {
+                return value.toFixed(settings.decimals);
+            }
+        }(jQuery));
+        
+        jQuery(function ($) {
+          // custom formatting example
+          $('.count-number').data('countToOptions', {
+            formatter: function (value, options) {
+              return value.toFixed(options.decimals).replace(/\B(?=(?:\d{3})+(?!\d))/g, ',');
+            }
+          });
+          
+          // start all the timers
+          $('.timer').each(count);  
+          
+          function count(options) {
+            var $this = $(this);
+            options = $.extend({}, options || {}, $this.data('countToOptions') || {});
+            $this.countTo(options);
+          }
         });
     </script>
 </body>
